@@ -8,7 +8,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
-import java.io.FileInputStream;
 import java.util.List;
 
 public class Help extends GridPane {
@@ -18,9 +17,9 @@ public class Help extends GridPane {
     private Button backward = new Button("←");
     private HBox arrowBox = new HBox();
     private ImageView imageView = new ImageView();
-    private Image r1 = new Image(new FileInputStream("C:\\Users\\Mateus\\PORTIFOLIO BACKEND\\final_super_trunfo\\src\\main\\resources\\mateus\\final_super_trunfo\\RULES1.png"));
-    private Image r2 = new Image(new FileInputStream("C:\\Users\\Mateus\\PORTIFOLIO BACKEND\\final_super_trunfo\\src\\main\\resources\\mateus\\final_super_trunfo\\RULES2.png"));
-    private Image r3 = new Image(new FileInputStream("C:\\Users\\Mateus\\PORTIFOLIO BACKEND\\final_super_trunfo\\src\\main\\resources\\mateus\\final_super_trunfo\\RULES3.png"));
+    private Image r1 = new Image(getClass().getResourceAsStream("RULES1.png"));
+    private Image r2 = new Image(getClass().getResourceAsStream("RULES2.png"));
+    private Image r3 = new Image(getClass().getResourceAsStream("RULES3.png"));
     public Help(Stage stage) throws Exception {
 
         imageView.setImage(r1);

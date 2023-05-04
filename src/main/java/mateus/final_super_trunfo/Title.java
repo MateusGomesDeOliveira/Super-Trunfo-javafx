@@ -8,8 +8,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
-
-import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -22,10 +20,10 @@ public class Title extends GridPane {
         HBox imagePlacement = new HBox();
         VBox buttonPlacement = new VBox();
 
-        Image t1 = new Image(new FileInputStream("C:\\Users\\Mateus\\PORTIFOLIO BACKEND\\final_super_trunfo\\src\\main\\resources\\mateus\\final_super_trunfo\\TITLE1.png"));
-        Image t2 = new Image(new FileInputStream("C:\\Users\\Mateus\\PORTIFOLIO BACKEND\\final_super_trunfo\\src\\main\\resources\\mateus\\final_super_trunfo\\TITLE2.png"));
-        Image t3 = new Image(new FileInputStream("C:\\Users\\Mateus\\PORTIFOLIO BACKEND\\final_super_trunfo\\src\\main\\resources\\mateus\\final_super_trunfo\\TITLE3.png"));
-        Image t4 = new Image(new FileInputStream("C:\\Users\\Mateus\\PORTIFOLIO BACKEND\\final_super_trunfo\\src\\main\\resources\\mateus\\final_super_trunfo\\TITLE4.png"));
+        Image t1 = new Image(getClass().getResourceAsStream("TITLE1.png"));
+        Image t2 = new Image(getClass().getResourceAsStream("TITLE2.png"));
+        Image t3 = new Image(getClass().getResourceAsStream("TITLE3.png"));
+        Image t4 = new Image(getClass().getResourceAsStream("TITLE4.png"));
 
         ImageView imageView = new ImageView();
         imageView.setImage(t1);
