@@ -1,0 +1,33 @@
+.background{
+-fx-background-color: linear-gradient(to left top, #e66465, #9198e5);
+}
+.botoes{
+-fx-font-size: 28px;
+}
+.arrows{
+-fx-font-size: 24px;
+}
+.giveUp{
+-fx-background-color: red;
+-fx-text-fill: black;
+-fx-font-size: 28px;
+}
+.confirmText{
+-fx-background-color: white;
+}
+.confirmTextText{
+-fx-background-color: gray;
+-fx-font-size: 28px;
+-fx-text-fill: black;
+}
+.shuffle{
+-fx-background-color: white;
+-fx-font-size: 28px;
+-fx-text-fill: black;
+}
+.turn{
+-fx-font-size: 28px;
+}
+.deck{
+-fx-font-size: 26px;
+}
